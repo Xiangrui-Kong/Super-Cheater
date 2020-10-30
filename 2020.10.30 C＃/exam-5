@@ -1,9 +1,8 @@
 #include <stdio.h>
 int main()
 {
-	int a, b, c, t;                      //定义4个基本整型变量a,b,c,t;
-    printf("请输入三个整数:");
-	scanf("%d%d%d", &a, &b, &c);
+	float a, b, c, t;                      //定义4个基本变量a,b,c,t;
+	scanf("%f%f%f", &a, &b, &c);
 	//如果a大于b，借助中间变量t实现a、b值互换；
 	if (a > c)
 	{
@@ -25,6 +24,6 @@ int main()
 		b = c;
 		c = t;
     }
-    printf("从小到大排列为:%d,%d,%d",a,b,c);
+    printf("%g %g %g",c,b,a);
 	return 0;
 }
