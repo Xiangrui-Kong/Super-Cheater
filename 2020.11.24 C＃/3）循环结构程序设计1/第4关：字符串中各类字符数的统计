@@ -21,30 +21,3 @@
 	  /*********End**********/ 
        return 0;
 	}
-
-/*
-想提一个小问题。。。 为什么以下代码不能实现功能。。。
-#include<stdio.h>
-	int main(void)
-	{  
-	  /*********Begin*********/
-      int ying,shu,kong,qi;
-      char x;
-      ying=shu=kong=qi=0;
-	  while((x=getchar())!='\n')
-      {  if(x>='a' && x<='z')
-           ying++;
-          else if(x>='0' && x<='9')
-                 shu++;
-                    else if(x=32)
-                             kong++;
-                                 else qi++;
-
-      }
-
-      printf("%d %d %d %d",ying,shu,kong,qi);
-	  
-	  /*********End**********/ 
-       return 0;
-	}
-*/
