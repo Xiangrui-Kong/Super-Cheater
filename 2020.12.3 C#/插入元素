@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+    int a[11] = {1,4,6,9,11,25,31,46,83,100};
+    int temp = 0;
+    
+    scanf("%d",&a[10]);
+    for(int i = 0; i < 10; i++){
+        if (a[10 - i] < a[10-i-1]) {
+            temp = a[10-i-1];
+            a[10-i - 1] = a[10 - i];
+            a[10 - i] = temp;
+            }   
+    }
+    for(int j = 0;j < 11;j++)
+        printf("%d ",a[j]);
+}
