@@ -1,13 +1,28 @@
 #include <stdio.h>
-#include<string.h>
-
 int main()
 {
-	int b;
-	char a[99];
-	printf("请输入字符串：\n");
-	gets_s(a);
-	b=strlen(a);
-	printf("经统计，共有字符%d个", b);
+	int i;
+	char a[1000];
+	int lenth(char *p);
+	scanf_s("%s", a,999);
+	i = lenth(a);
+	printf("%d", i);
+	
+
+	
+
+
 	return 0;
+}
+
+int lenth(char *p)
+{
+	int i=0;
+	while (*p != '\0') 
+	{
+		p++;
+		i++;
+	}
+	return i;
+	
 }
