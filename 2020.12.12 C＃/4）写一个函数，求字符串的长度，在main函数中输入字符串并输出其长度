@@ -1,17 +1,10 @@
 #include <stdio.h>
 int main()
 {
-	int i;
 	char a[1000];
 	int lenth(char *p);
 	scanf_s("%s", a,999);
-	i = lenth(a);
-	printf("%d", i);
-	
-
-	
-
-
+	printf("%d", lenth(a));
 	return 0;
 }
 
@@ -24,5 +17,4 @@ int lenth(char *p)
 		i++;
 	}
 	return i;
-	
 }
