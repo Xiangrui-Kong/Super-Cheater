@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+	int i, n, m;
+	char a[10];
+	void lenth(int p, int q, int* c);
+	printf("请定义字符串长度：");
+	scanf_s("%d", &n);
+	printf("请输入字符串：");
+	scanf_s("%s", a, 9);
+	printf("输入从何开始统计字符串长度：");
+	scanf_s("%d", &m);
+	lenth(m, n, &i);
+	printf("最后的结果为：%d", i);
+	return 0;
+}
+
+void lenth(int p, int q, int* c)
+{
+	int i, b=0;
+	do
+	{
+		b++;
+		q--;
+	} while (q > p);
+	*c = b;
+	
+}
