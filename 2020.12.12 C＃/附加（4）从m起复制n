@@ -4,25 +4,25 @@ int main()
 {
 	int  n, m;
 	char a[10],c[10];
-	void lenth(int p, int q, char d[10],char b[10]);
+	void lenth(int *p, int *q, char d[10],char b[10]);
 	printf("请定义字符串长度：");
 	scanf_s("%d", &n);
 	printf("请输入字符串：");
 	scanf_s("%s", a, 9);
 	printf("输入从何开始复制字符串长度：");
 	scanf_s("%d", &m);
-	lenth(m, n, c,a);
+	lenth(&m, &n, c,a);
 	printf("最后的结果为：%s", c);
 	return 0;
 }
 
-void lenth(int p, int q, char d[10],char b[10])
+void lenth(int *p, int *q, char d[10],char b[10])
 {
-	int i=p,j=0;
+	int i=*p,j=0;
 	do
 	{
 		d[j] = b[i];
 		j++;
 		i++;
-	} while (i <= q);
+	} while (i <= *q);
 }
