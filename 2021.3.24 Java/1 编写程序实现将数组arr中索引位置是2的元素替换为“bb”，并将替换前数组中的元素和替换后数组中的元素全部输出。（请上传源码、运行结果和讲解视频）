@@ -9,7 +9,7 @@ public class test {
         {
             System.out.println(arr[i]);
         }
-        arr[1]="bb";
+        arr[2]="bb";
         for(int i=0;i<4;i++)
         {
             System.out.println(arr[i]);
