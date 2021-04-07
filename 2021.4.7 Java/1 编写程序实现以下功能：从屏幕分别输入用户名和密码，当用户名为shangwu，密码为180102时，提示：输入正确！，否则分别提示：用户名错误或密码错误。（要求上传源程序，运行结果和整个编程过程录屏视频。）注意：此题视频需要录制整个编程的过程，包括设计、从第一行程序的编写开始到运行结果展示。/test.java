@@ -13,11 +13,19 @@ public class test {
         System.out.println("请输入密码:");
         b=x.nextLine();
         if (a.equals("shangwu") && b.equals("180102")) {
-            System.out.println("输入正确");
+            System.out.println("全部输入正确！");
         } else {
-            System.out.println("输入错误");
+             if (!a.equals("shangwu") && b.equals("180102")) {
+                System.out.println("账号输入错误！");
+             } else {
+                if (a.equals("shangwu") && !b.equals("180102")) {
+                    System.out.println("密码输入错误！");
+                } else {
+                    System.out.println("全部输入错误！");
+                }
+             }
         }
-
+        
 
 
     }
