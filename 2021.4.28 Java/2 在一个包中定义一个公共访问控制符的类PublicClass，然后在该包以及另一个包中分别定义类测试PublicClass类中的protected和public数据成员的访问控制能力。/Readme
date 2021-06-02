@@ -1,0 +1,15 @@
+2
+在一个包中定义一个公共访问控制符的类PublicClass，然后在该包以及另一个包中分别定义类测试PublicClass类中的protected和public数据成员的访问控制能力。
+
+
+
+我的答案：
+
+https://p.ananas.chaoxing.com/star3/origin/b64e9d8b6d668bb0ae8c7aebd3f10b57.png
+https://p.ananas.chaoxing.com/star3/origin/0e448c2783055545bcdebe206975e4b4.png
+https://p.ananas.chaoxing.com/star3/origin/172241225f8c22759d3b380aa96d764b.png
+
+
+
+
+在同一个包中，protected和public成员均能访问；不在同一个包时，只能访问public成员。
