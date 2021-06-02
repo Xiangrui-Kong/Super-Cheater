@@ -1,0 +1,25 @@
+1
+声明一个函数式接口:
+
+public interface myFunc {
+
+    public Integer getValue(Integer num);
+
+}
+
+//声明一个方法,使用接口作为参数
+
+private Integer operation(int x, myFunc fun) {
+
+    return fun.getValue(x);
+
+}
+
+
+
+写出lamda表达式
+
+
+
+
+答案：(int x, myFunc fun)  -> {return fun.getValue(x);}
